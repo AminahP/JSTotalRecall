@@ -57,4 +57,58 @@ if(biggieSmalls < 100){
 }
 
 // Monkey in the middle 
-let 
+let Monkey = 13
+if(monkey < 5){
+    console.log('little number')
+}else if(monkey > 10){
+    console.log('big number')
+}else{
+    console.log('monkey')
+}
+
+
+// Whats in your closet
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+  
+  console.log('Kristyn is rocking that hat' + kristynsCloset[2] + 'today!');
+  kristynsCloset.splice(6, 0, 'raybans')
+console.log(kristynsCloset);
+kristynsCloset[5] = 'stained knit hat';
+console.log(kristynsCloset)
+
+
+console.log('Thom is looking fierce in a' + thomsCloset[0][0] + ',' + thomsCloset[1][1] + 'and' + thomsCloset[2][1]+ '!')
+
+thomsCloset[1][2] = 'Footie Pajamas'
+console.log(thomsCloset)
+
